@@ -3,422 +3,273 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Evan Munasinghe, an Information Technology undergraduate at SLIIT, Full-Stack Developer Intern, and part-time Land Surveyor Assistant.">
-  <meta name="theme-color" content="#0b1020">
-  <title>Evan Munasinghe | Full-Stack Developer Intern</title>
+  <meta name="description" content="Evan Munasinghe: full-stack developer and founder of Aureus Technologies, Sri Lanka.">
+  <meta name="theme-color" content="#0D1117">
+  <title>Evan Munasinghe | Portfolio</title>
   <link rel="icon" type="image/png" href="assets/evan-logo.png">
   <link rel="apple-touch-icon" href="assets/evan-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Primary navigation">
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="nav-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Change theme">
-          <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
-          <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
-        </button>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+  <header class="nav">
+    <a class="logo" href="#home"><span class="grad">Evan</span>&nbsp;Munasinghe<i></i></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <nav id="nav-links" aria-label="Sections">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="availability"><span></span> Open to new opportunities</div>
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Evan<br><span>Munasinghe.</span></h1>
-          <p class="hero-role">Information Technology Undergraduate <span>•</span> Full-Stack Developer Intern <span>•</span> Part-Time Land Surveyor Assistant</p>
-          <p class="hero-intro">I turn ideas into reliable digital experiences through clean code, thoughtful design, and a genuine focus on the people using them.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-            <a class="button button-secondary" href="#contact"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Let's connect</a>
-          </div>
-          <div class="social-links hero-socials" aria-label="Social profiles">
-            <a href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="Chat with Evan Munasinghe on WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-            <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="Evan Munasinghe on GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Evan Munasinghe on Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://x.com/evanmunasinghe?s=11" target="_blank" rel="noopener noreferrer" aria-label="Evan Munasinghe on X" title="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Evan Munasinghe on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-          </div>
-          <div class="hero-meta">
-            <div><strong>3+</strong><span>Years of study</span></div>
-            <div><strong>6+</strong><span>Major projects</span></div>
-            <div><strong>15+</strong><span>Technologies</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-label="Evan Munasinghe monogram illustration">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="monogram-card">
-            <div class="code-label"><span></span><span></span><span></span></div>
-            <img src="assets/evan-munasinghe.jpeg" alt="Evan Munasinghe, Full-Stack Developer Intern" width="1600" height="1600">
-            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Based in Sri Lanka</p>
-          </div>
-          <div class="floating-tag tag-one">Full Stack</div>
-          <div class="floating-tag tag-two">UI / UX</div>
-          <div class="floating-tag tag-three"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hi">Hi, I am</p>
+        <h1 class="grad">Evan Munasinghe</h1>
+        <p class="typed">I am a <span id="typed" aria-live="polite">Full-Stack Developer</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="lead">Founder of Aureus Technologies and full-stack developer intern at Virtual System Solutions. I build business software like point of sale, accounting, garage management, and marketplaces, mostly with Laravel and the MERN stack. Third-year IT undergraduate at SLIIT.</p>
+        <div class="hero-btns">
+          <a class="btn" href="#contact">Hire me</a>
+          <a class="btn btn-ghost" href="#projects">View projects</a>
         </div>
       </div>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span> Scroll to discover</a>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">01 — About</p>
-          <h2>Building with purpose,<br><span>learning without limits.</span></h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-story reveal">
-            <p class="lead">I'm a third-year Information Technology undergraduate at SLIIT, specializing in Software Engineering, with a passion for developing practical software and intuitive user experiences.</p>
-            <p>My experience spans full-stack development with Laravel, MERN web applications, MySQL backends, and .NET desktop software. Through my current internship and academic work, I've developed hands-on skills in software development, testing, debugging, database design, and version control.</p>
-            <p>I enjoy learning new technologies, solving meaningful problems, and bringing a design-minded perspective to every stage of development.</p>
-          </div>
-          <div class="about-cards reveal">
-            <article class="info-card">
-              <span class="card-icon card-logo"><img src="assets/sliit-logo.jpg" alt="SLIIT logo" width="432" height="432" loading="lazy"></span>
-              <div>
-                <p class="card-label">Education</p>
-                <h3>BSc (Hons) in Information Technology</h3>
-                <p>Software Engineering specialization<br>Sri Lanka Institute of Information Technology</p>
-              </div>
-            </article>
-            <article class="info-card">
-              <span class="card-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
-              <div>
-                <p class="card-label">Current role</p>
-                <h3>Full-Stack Developer Intern</h3>
-                <p>Virtual System Solutions (Pvt) Ltd<br>Working with the Laravel framework</p>
-              </div>
-            </article>
-            <article class="info-card">
-              <span class="card-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span>
-              <div>
-                <p class="card-label">Core interests</p>
-                <h3>Development × Design</h3>
-                <p>Full stack, backend, UI/UX, APIs, databases &amp; testing</p>
-              </div>
-            </article>
-            <article class="info-card">
-              <span class="card-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></span>
-              <div>
-                <p class="card-label">Part-time role</p>
-                <h3>Land Surveyor Assistant</h3>
-                <p>Supporting land surveying work alongside my studies and software development career</p>
-              </div>
-            </article>
-          </div>
+      <div class="hero-photo">
+        <img src="assets/evan-munasinghe.jpeg" alt="Evan Munasinghe" width="1600" height="1600">
+        <div class="socials">
+          <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </section>
 
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section-heading section-heading-row reveal">
+    <section class="section" id="about">
+      <h2>Why work <span class="grad">with me</span></h2>
+      <div class="cards three">
+        <article class="card">
+          <i class="fa-solid fa-layer-group icon"></i>
+          <h3>Full-stack developer</h3>
+          <p>From database design to the screen your users click on. I've shipped multi-tenant systems, payments, and reporting.</p>
+          <ul class="chips"><li>Laravel</li><li>React</li><li>Node.js</li></ul>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-briefcase icon"></i>
+          <h3>Business owner</h3>
+          <p>I run Aureus Technologies, so I understand deadlines, budgets, and what a client actually needs from software.</p>
+          <ul class="chips"><li>Client work</li><li>Planning</li><li>Delivery</li></ul>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-compass-drafting icon"></i>
+          <h3>Detail-focused</h3>
+          <p>I also work part-time as a land surveyor assistant, where every measurement has to be right the first time.</p>
+          <ul class="chips"><li>Testing</li><li>Accuracy</li><li>Reliability</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Tech <span class="grad">expertise</span></h2>
+      <p class="sub">The languages, frameworks, and tools I use to build things.</p>
+      <div class="cards skills">
+        <article class="card">
+          <h3><i class="fa-solid fa-code"></i> Languages</h3>
+          <ul class="chips tech"><li><img src="assets/tech/typescript.svg" alt="" width="18" height="18">TypeScript</li><li><img src="assets/tech/javascript.svg" alt="" width="18" height="18">JavaScript</li><li><img src="assets/tech/php.svg" alt="" width="18" height="18">PHP</li><li><img src="assets/tech/java.svg" alt="" width="18" height="18">Java</li><li><i class="fa-solid fa-database"></i>SQL</li></ul>
+        </article>
+        <article class="card">
+          <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+          <ul class="chips tech"><li><img src="assets/tech/nextdotjs.svg" alt="" width="18" height="18">Next.js</li><li><img src="assets/tech/react.svg" alt="" width="18" height="18">React</li><li><img src="assets/tech/tailwindcss.svg" alt="" width="18" height="18">Tailwind CSS</li><li><img src="assets/tech/shadcnui.svg" alt="" width="18" height="18">shadcn/ui</li><li><img src="assets/tech/framer.svg" alt="" width="18" height="18">Motion</li><li><i class="fa-solid fa-chart-line"></i>Recharts</li><li><img src="assets/tech/hotwire.svg" alt="" width="18" height="18">Hotwire Turbo</li></ul>
+        </article>
+        <article class="card">
+          <h3><i class="fa-solid fa-server"></i> Backend</h3>
+          <ul class="chips tech"><li><img src="assets/tech/laravel.svg" alt="" width="18" height="18">Laravel</li><li><img src="assets/tech/springboot.svg" alt="" width="18" height="18">Spring Boot</li><li><img src="assets/tech/nodedotjs.svg" alt="" width="18" height="18">Node.js</li><li><img src="assets/tech/express.svg" alt="" width="18" height="18">Express</li><li><i class="fa-solid fa-key"></i>NextAuth</li><li><i class="fa-solid fa-plug"></i>REST APIs</li></ul>
+        </article>
+        <article class="card">
+          <h3><i class="fa-solid fa-database"></i> Data &amp; ORM</h3>
+          <ul class="chips tech"><li><img src="assets/tech/postgresql.svg" alt="" width="18" height="18">PostgreSQL</li><li><img src="assets/tech/supabase.svg" alt="" width="18" height="18">Supabase</li><li><img src="assets/tech/tidb.svg" alt="" width="18" height="18">TiDB</li><li><img src="assets/tech/mysql.svg" alt="" width="18" height="18">MySQL</li><li><img src="assets/tech/mariadb.svg" alt="" width="18" height="18">MariaDB</li><li><img src="assets/tech/mongodb.svg" alt="" width="18" height="18">MongoDB</li><li><img src="assets/tech/redis.svg" alt="" width="18" height="18">Redis</li><li><img src="assets/tech/prisma.svg" alt="" width="18" height="18">Prisma</li></ul>
+        </article>
+        <article class="card">
+          <h3><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h3>
+          <ul class="chips tech"><li><img src="assets/tech/vercel.svg" alt="" width="18" height="18">Vercel</li><li><img src="assets/tech/vercel.svg" alt="" width="18" height="18">Vercel Blob</li><li><img src="assets/tech/vite.svg" alt="" width="18" height="18">Vite</li><li><img src="assets/tech/git.svg" alt="" width="18" height="18">Git</li><li><img src="assets/tech/githubactions.svg" alt="" width="18" height="18">GitHub Actions</li></ul>
+        </article>
+        <article class="card">
+          <h3><i class="fa-solid fa-circle-check"></i> Quality &amp; Tooling</h3>
+          <ul class="chips tech"><li><img src="assets/tech/zod.svg" alt="" width="18" height="18">Zod</li><li><img src="assets/tech/reacthookform.svg" alt="" width="18" height="18">React Hook Form</li><li><img src="assets/tech/playwright.svg" alt="" width="18" height="18">Playwright</li><li><i class="fa-solid fa-vial"></i>Pest</li><li><img src="assets/tech/puppeteer.svg" alt="" width="18" height="18">Puppeteer</li><li><img src="assets/tech/eslint.svg" alt="" width="18" height="18">ESLint</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience &amp; <span class="grad">education</span></h2>
+      <ol class="timeline">
+        <li class="card">
+          <img src="assets/evan-logo.png" alt="" width="48" height="48">
           <div>
-            <p class="eyebrow">02 — Capabilities</p>
-            <h2>Tools I use to<br><span>make ideas happen.</span></h2>
+            <p class="when">2026 – Present</p>
+            <h3>Founder, Aureus Technologies</h3>
+            <p>Software studio building websites, business systems, and mobile apps for clients. Products include Invotron and Nimuzon.com.</p>
           </div>
-          <p>From interface to infrastructure, I work across the product stack to create thoughtful and dependable solutions.</p>
-        </div>
-
-        <div class="skill-filters reveal" role="group" aria-label="Filter technical skills">
-          <button class="skill-filter active" type="button" data-filter="all">All</button>
-          <button class="skill-filter" type="button" data-filter="frontend">Frontend</button>
-          <button class="skill-filter" type="button" data-filter="backend">Backend</button>
-          <button class="skill-filter" type="button" data-filter="database">Database</button>
-          <button class="skill-filter" type="button" data-filter="tools">Tools &amp; Design</button>
-        </div>
-
-        <div class="skill-grid reveal">
-          <div class="skill-item" data-category="frontend"><span class="tech-icon html"><i class="fa-brands fa-html5" aria-hidden="true"></i></span><strong>HTML5</strong><small>Frontend</small></div>
-          <div class="skill-item" data-category="frontend"><span class="tech-icon css"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></span><strong>CSS3</strong><small>Frontend</small></div>
-          <div class="skill-item" data-category="frontend"><span class="tech-icon js"><i class="fa-brands fa-js" aria-hidden="true"></i></span><strong>JavaScript</strong><small>Language</small></div>
-          <div class="skill-item" data-category="frontend"><span class="tech-icon react"><i class="fa-brands fa-react" aria-hidden="true"></i></span><strong>React</strong><small>Frontend</small></div>
-          <div class="skill-item" data-category="backend"><span class="tech-icon node"><i class="fa-brands fa-node-js" aria-hidden="true"></i></span><strong>Node.js</strong><small>Backend</small></div>
-          <div class="skill-item" data-category="backend"><span class="tech-icon php"><i class="fa-brands fa-laravel" aria-hidden="true"></i></span><strong>Laravel</strong><small>Backend</small></div>
-          <div class="skill-item" data-category="backend"><span class="tech-icon dotnet"><i class="fa-brands fa-windows" aria-hidden="true"></i></span><strong>ASP.NET Core</strong><small>Backend</small></div>
-          <div class="skill-item" data-category="backend"><span class="tech-icon java"><i class="fa-brands fa-java" aria-hidden="true"></i></span><strong>Java</strong><small>Language</small></div>
-          <div class="skill-item" data-category="database"><span class="tech-icon mongo"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span><strong>MongoDB</strong><small>Database</small></div>
-          <div class="skill-item" data-category="database"><span class="tech-icon mysql"><i class="fa-solid fa-database" aria-hidden="true"></i></span><strong>MySQL</strong><small>Database</small></div>
-          <div class="skill-item" data-category="tools"><span class="tech-icon git"><i class="fa-brands fa-github" aria-hidden="true"></i></span><strong>Git &amp; GitHub</strong><small>Version control</small></div>
-          <div class="skill-item" data-category="tools"><span class="tech-icon figma"><i class="fa-brands fa-figma" aria-hidden="true"></i></span><strong>Figma</strong><small>UI/UX design</small></div>
-          <div class="skill-item" data-category="tools"><span class="tech-icon test"><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i></span><strong>Playwright</strong><small>Testing</small></div>
-          <div class="skill-item" data-category="tools"><span class="tech-icon postman"><i class="fa-solid fa-satellite-dish" aria-hidden="true"></i></span><strong>Postman</strong><small>API tools</small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience" id="experience">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">03 — Experience</p>
-          <h2>Learning by <span>doing.</span></h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">Present</div>
-            <div class="timeline-content">
-              <div class="experience-heading">
-                <img class="company-logo" src="assets/virtual-system-solutions-logo.jpeg" alt="Virtual System Solutions logo" width="262" height="262" loading="lazy">
-                <div>
-                  <p class="card-label">Virtual System Solutions (Pvt) Ltd</p>
-                  <h3>Full-Stack Developer Intern</h3>
-                </div>
-              </div>
-              <p>Developing and maintaining full-stack web applications using the Laravel framework, with a focus on reliable backend logic, responsive interfaces, database integration, and maintainable code.</p>
-              <div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Full Stack</span><span>Git</span></div>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">Part-time</div>
-            <div class="timeline-content">
-              <div class="experience-heading">
-                <span class="company-logo role-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></span>
-                <div>
-                  <p class="card-label">Land Surveying</p>
-                  <h3>Land Surveyor Assistant</h3>
-                </div>
-              </div>
-              <p>Supporting professional land surveying work on a part-time basis while continuing my Information Technology studies and software development internship.</p>
-              <div class="tag-list"><span>Part-time</span><span>Land Surveying</span><span>Field Support</span></div>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">Previous</div>
-            <div class="timeline-content">
-              <div class="experience-heading">
-                <img class="company-logo company-logo-dark" src="assets/eyeplex-logo.jpeg" alt="Eyeplex logo" width="1000" height="1000" loading="lazy">
-                <div>
-                  <p class="card-label">Eyeplex Solution</p>
-                  <h3>Software Engineering Intern</h3>
-                </div>
-              </div>
-              <p>Contributed to web applications and gained experience with enterprise software practices, REST APIs, MVC architecture, authentication, bug fixing, and database development.</p>
-              <div class="tag-list"><span>ASP.NET Core</span><span>MySQL</span><span>Git</span><span>REST APIs</span></div>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">3rd Year</div>
-            <div class="timeline-content">
-              <div class="experience-heading">
-                <img class="company-logo" src="assets/sliit-logo.jpg" alt="SLIIT logo" width="432" height="432" loading="lazy">
-                <div>
-                  <p class="card-label">SLIIT</p>
-                  <h3>Information Technology Undergraduate</h3>
-                </div>
-              </div>
-              <p>Following a BSc (Hons) in Information Technology with a specialization in Software Engineering, building a strong foundation in full-stack development, databases, architecture, testing, and collaborative product development.</p>
-              <div class="tag-list"><span>MERN</span><span>Laravel</span><span>.NET</span><span>Agile</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-heading section-heading-row reveal">
+        </li>
+        <li class="card">
+          <img src="assets/virtual-system-solutions-logo.jpeg" alt="" width="48" height="48">
           <div>
-            <p class="eyebrow">04 — Selected projects</p>
-            <h2>Ideas turned into<br><span>working software.</span></h2>
+            <p class="when">2026 – Present</p>
+            <h3>Full-Stack Developer Intern, Virtual System Solutions</h3>
+            <p>Building and maintaining Laravel applications, including the FleeV garage management system.</p>
           </div>
-          <p>A selection of academic and collaborative projects across full-stack, web, and desktop development.</p>
-        </div>
-
-        <div class="project-showcase">
-          <article class="case-study case-study-featured reveal">
-            <div class="case-visual case-visual-baked">
-              <div class="case-visual-top">
-                <span>Featured group project</span>
-                <span>01 / 06</span>
-              </div>
-              <div class="case-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
-              <div class="case-interface" aria-hidden="true">
-                <div class="interface-nav"><i></i><i></i><i></i></div>
-                <div class="interface-content">
-                  <span></span>
-                  <div><i></i><i></i><i></i></div>
-                  <b></b>
-                </div>
-              </div>
-            </div>
-            <div class="case-content">
-              <div>
-                <p class="project-kicker">Delivery &amp; payment platform</p>
-                <h3>BakedTato</h3>
-                <p class="case-description">A collaborative MERN application that streamlines delivery operations and payment workflows from one unified platform.</p>
-              </div>
-              <div class="case-details">
-                <div>
-                  <span>My contribution</span>
-                  <p>Delivery management and payment management</p>
-                </div>
-                <div>
-                  <span>Key features</span>
-                  <p>Delivery CRUD, payment processing, reports, PDF generation, and WhatsApp integration</p>
-                </div>
-              </div>
-              <div class="project-stack">
-                <span><i class="fa-brands fa-react" aria-hidden="true"></i> React</span>
-                <span><i class="fa-brands fa-node-js" aria-hidden="true"></i> Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
-          </article>
-
-          <div class="project-cards">
-            <article class="project-tile reveal">
-              <div class="project-tile-head">
-                <div class="project-symbol symbol-orange"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div>
-                <span class="project-index">02</span>
-              </div>
-              <div class="project-tile-body">
-                <p class="project-kicker">Full-stack management system</p>
-                <h3>Car Sale</h3>
-                <p>A secure vehicle and customer management application with authentication, database integration, dynamic forms, and complete CRUD workflows.</p>
-              </div>
-              <div class="project-stack">
-                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
-              </div>
-            </article>
-
-            <article class="project-tile reveal">
-              <div class="project-tile-head">
-                <div class="project-symbol symbol-purple"><i class="fa-solid fa-ticket" aria-hidden="true"></i></div>
-                <span class="project-index">03</span>
-              </div>
-              <div class="project-tile-body">
-                <p class="project-kicker">Event commerce platform</p>
-                <h3>Event Hub</h3>
-                <p>A MERN-based platform designed to simplify event discovery, ticket booking, and merchandise sales.</p>
-              </div>
-              <div class="project-stack">
-                <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
-              </div>
-            </article>
-
-            <article class="project-tile reveal">
-              <div class="project-tile-head">
-                <div class="project-symbol symbol-blue"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
-                <span class="project-index">04</span>
-              </div>
-              <div class="project-tile-body">
-                <p class="project-kicker">Web ordering application</p>
-                <h3>Online Order System</h3>
-                <p>A Java web application connecting order workflows to a MySQL database through an Apache Tomcat server environment.</p>
-              </div>
-              <div class="project-stack">
-                <span>Java</span><span>MySQL</span><span>Apache Tomcat</span>
-              </div>
-            </article>
-
-            <article class="project-tile reveal">
-              <div class="project-tile-head">
-                <div class="project-symbol symbol-green"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
-                <span class="project-index">05</span>
-              </div>
-              <div class="project-tile-body">
-                <p class="project-kicker">Customer support platform</p>
-                <h3>Online Support System</h3>
-                <p>A responsive support-oriented web system that combines a clean interface with structured SQL data management.</p>
-              </div>
-              <div class="project-stack">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
-              </div>
-            </article>
-
-            <article class="project-tile project-tile-wide reveal">
-              <div class="project-tile-head">
-                <div class="project-symbol symbol-cyan"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
-                <span class="project-index">06</span>
-              </div>
-              <div class="project-tile-body">
-                <p class="project-kicker">Academic desktop software</p>
-                <h3>.NET Desktop Application</h3>
-                <p>A desktop application created to apply object-oriented programming, database operations, interface design, and practical software engineering principles in a native environment.</p>
-              </div>
-              <div class="project-stack">
-                <span>.NET</span><span>C#</span><span>SQLite</span><span>Desktop UI</span>
-              </div>
-            </article>
+        </li>
+        <li class="card">
+          <span class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+          <div>
+            <p class="when">Part-time</p>
+            <h3>Land Surveyor Assistant</h3>
+            <p>Field support for licensed surveyors: boundary marking, readings, and setting-out work.</p>
           </div>
-        </div>
+        </li>
+        <li class="card">
+          <img class="on-dark" src="assets/eyeplex-logo.jpeg" alt="" width="48" height="48">
+          <div>
+            <p class="when">Previously</p>
+            <h3>Software Engineering Intern, Eyeplex Solution</h3>
+            <p>ASP.NET Core web apps: REST APIs, MVC, authentication, and database work.</p>
+          </div>
+        </li>
+        <li class="card">
+          <img src="assets/sliit-logo.jpg" alt="" width="48" height="48">
+          <div>
+            <p class="when">Third year</p>
+            <h3>BSc (Hons) Information Technology, SLIIT</h3>
+            <p>Sri Lanka Institute of Information Technology, specialising in Software Engineering.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects <span class="grad">showcase</span></h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="active" data-filter="all"><i class="fa-solid fa-border-all"></i> All</button>
+        <button type="button" data-filter="business"><i class="fa-solid fa-briefcase"></i> Business systems</button>
+        <button type="button" data-filter="web"><i class="fa-solid fa-globe"></i> Web &amp; mobile</button>
+        <button type="button" data-filter="uni"><i class="fa-solid fa-graduation-cap"></i> University</button>
+      </div>
+      <p class="sub" id="count" aria-live="polite"></p>
+
+      <div class="cards projects">
+        <article class="card project" data-cat="business">
+          <a class="thumb" href="https://www.invotron.store" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/invotron.jpg" alt="Screenshot of Invotron" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Business system · 2026</p>
+          <h3>Invotron</h3>
+          <p>Point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting in one multi-tenant system.</p>
+          <ul class="chips"><li>Multi-tenant</li><li>POS</li><li>Accounting</li></ul>
+          <p class="links"><a href="https://www.invotron.store" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="business">
+          <a class="thumb" href="https://fleev.net" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/fleev.jpg" alt="Screenshot of FleeV" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Business system · 2026</p>
+          <h3>FleeV</h3>
+          <p>Cloud garage management that replaces paper work orders, missed bookings, and scattered records.</p>
+          <ul class="chips"><li>Laravel</li><li>MySQL</li></ul>
+          <p class="links"><a href="https://fleev.net" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="web">
+          <a class="thumb" href="https://nimuzon.com" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/nimuzon.jpg" alt="Screenshot of Nimuzon.com" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Marketplace · 2026</p>
+          <h3>Nimuzon.com</h3>
+          <p>An online marketplace for natural Sri Lankan gemstones such as Ceylon sapphires and rubies.</p>
+          <ul class="chips"><li>Full-stack</li><li>E-commerce</li></ul>
+          <p class="links"><a href="https://nimuzon.com" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="web">
+          <a class="thumb" href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/pentakill.jpg" alt="Screenshot of Pentakill" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Web app · 2026</p>
+          <h3>Pentakill</h3>
+          <p>Look up any League of Legends player, count every pentakill in their match history, and compare two players.</p>
+          <ul class="chips"><li>Riot Games API</li><li>UI design</li></ul>
+          <p class="links"><a href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="web">
+          <a class="thumb" href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/remindme.jpg" alt="Screenshot of Remind me" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Mobile app · 2026</p>
+          <h3>Remind me</h3>
+          <p>A mobile app a client uses to keep track of payments owed to suppliers.</p>
+          <ul class="chips"><li>Mobile</li></ul>
+          <p class="links"><a href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="web">
+          <a class="thumb" href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/aureus.jpg" alt="Screenshot of Aureus Technologies" width="800" height="486" loading="lazy"></a>
+          <p class="tag">Website · 2026</p>
+          <h3>Aureus Technologies</h3>
+          <p>The website for my software studio, presenting services and client work.</p>
+          <ul class="chips"><li>Full-stack</li></ul>
+          <p class="links"><a href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="web">
+          <div class="thumb"><img src="assets/thumbs/shop.jpg" alt="Screenshot of Client demo sites" width="800" height="486" loading="lazy"></div>
+          <p class="tag">Demo sites · 2025–26</p>
+          <h3>Client demo sites</h3>
+          <p>Sample sites for pitching clients: a florist, a cliffside resort in Uluwatu, and a licensed land surveying firm.</p>
+          <ul class="chips"><li>Next.js</li></ul>
+          <p class="links"><a href="https://demo-shop-lyart.vercel.app" target="_blank" rel="noopener noreferrer">Florist <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://demo-resort-liart.vercel.app" target="_blank" rel="noopener noreferrer">Resort <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </article>
+        <article class="card project" data-cat="uni">
+          <p class="tag">Group project</p>
+          <h3>BakedTato</h3>
+          <p>MERN delivery and payment platform. I built delivery and payment management, reports, PDF generation, and WhatsApp updates.</p>
+          <ul class="chips"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+        </article>
+        <article class="card project" data-cat="uni">
+          <p class="tag">University</p>
+          <h3>Car Sale</h3>
+          <p>Vehicle and customer management with authentication, dynamic forms, and full CRUD.</p>
+          <ul class="chips"><li>Laravel</li><li>MySQL</li></ul>
+        </article>
+        <article class="card project" data-cat="uni">
+          <p class="tag">University</p>
+          <h3>Event Hub</h3>
+          <p>Event discovery, ticket booking, and merchandise sales.</p>
+          <ul class="chips"><li>MERN</li></ul>
+        </article>
+        <article class="card project" data-cat="uni">
+          <p class="tag">University</p>
+          <h3>Online Order System</h3>
+          <p>Order workflows on a Java web app backed by MySQL, running on Tomcat.</p>
+          <ul class="chips"><li>Java</li><li>MySQL</li></ul>
+        </article>
+        <article class="card project" data-cat="uni">
+          <p class="tag">University</p>
+          <h3>.NET Desktop App</h3>
+          <p>A native C# app practising object-oriented design, database operations, and interface layout.</p>
+          <ul class="chips"><li>C#</li><li>SQLite</li></ul>
+        </article>
       </div>
     </section>
 
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">05 — What I do</p>
-          <h2>Ways I can <span>contribute.</span></h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><span>01</span><h3>Full-Stack Development</h3><p>Responsive, scalable applications built with modern web technologies.</p></article>
-          <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div><span>02</span><h3>Backend &amp; APIs</h3><p>Secure APIs and maintainable database-driven application logic.</p></article>
-          <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div><span>03</span><h3>UI/UX Design</h3><p>Clean interfaces, wireframes, and prototypes centered around real users.</p></article>
-          <article class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-bug-slash" aria-hidden="true"></i></div><span>04</span><h3>Software Testing</h3><p>Reliable products through Playwright automation and thoughtful manual QA.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container contact-inner reveal">
-        <p class="eyebrow">06 — Let's connect</p>
-        <h2>Have an idea?<br><span>Let's build it together.</span></h2>
-        <p>I'm interested in software engineering opportunities, creative collaborations, and conversations about building better digital products.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-          <a class="button button-secondary" href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-          <a class="button button-secondary" href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
-          <a class="button button-secondary" href="https://x.com/evanmunasinghe?s=11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Follow on X</a>
-          <a class="button button-secondary" href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook</a>
-        </div>
-      </div>
+    <section class="section" id="contact">
+      <h2>Get in <span class="grad">touch</span></h2>
+      <p class="sub">Have a project, idea, or role in mind? Send a message and it will open in WhatsApp.</p>
+      <form class="card contact-form" id="contact-form">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Subject<input name="subject" required></label>
+        <label class="full">Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn full" type="submit"><i class="fa-brands fa-whatsapp"></i> Send via WhatsApp</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
-      <a class="brand" href="#top"><span class="brand-mark">EM</span><span class="brand-name">Evan Munasinghe<span>.</span></span></a>
-      <p>Designed &amp; built with care by Evan Munasinghe.</p>
-      <div class="footer-socials social-links" aria-label="Social profiles">
-        <a href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-        <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://x.com/evanmunasinghe?s=11" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-      </div>
-      <p>© <span id="current-year"></span> All rights reserved.</p>
-    </div>
+    <p>© <span id="year">2026</span> Evan Munasinghe. Built by me.</p>
   </footer>
 </body>
 </html>
