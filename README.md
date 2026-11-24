@@ -30,11 +30,11 @@ index.html          page content
 styles.css          all styling (colours are CSS variables at the top)
 script.js           typing effect, mobile menu, active nav link, project filter, contact form
 assets/
-  bg.webp           background image (compressed copy of Background.jpeg)
+  bg.webp           background image
   evan-munasinghe.jpeg, *-logo.*   photo and company logos
   thumbs/           compressed project screenshots used on the cards
+  case/             full-width screenshots for the case-study pages
   tech/             technology logos (SVG)
-  Projects/         original full-size project screenshots
 ```
 
 ## Common edits
@@ -44,7 +44,7 @@ assets/
 **Add a project screenshot:** make a small copy so the page stays fast, then point the card's `<img>` at it.
 
 ```bash
-cwebp -q 78 -resize 800 0 "assets/Projects/your-shot.png" -o assets/thumbs/name.webp
+cwebp -q 78 -resize 800 0 your-shot.png -o assets/thumbs/name.webp
 ```
 
 **Add a technology logo:** download it from Simple Icons and add a chip in the Tech expertise section.
@@ -54,7 +54,7 @@ curl -o assets/tech/name.svg https://cdn.simpleicons.org/<slug>
 # dark logos: https://cdn.simpleicons.org/<slug>/white
 ```
 
-**Update the CV:** edit `cv.html`, then regenerate the PDF the Download CV button serves.
+**Update the CV:** edit `cv.html` and push. A GitHub Action (`.github/workflows/cv.yml`) rebuilds `assets/Evan-Munasinghe-CV.pdf` and commits it. To build it locally instead:
 
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --no-pdf-header-footer \

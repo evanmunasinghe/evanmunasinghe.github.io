@@ -1,0 +1,20 @@
+# Rebuilds the CV PDF whenever cv.html (or its font/QR) changes, and commits it.
+name: Build CV PDF
+on:
+  push:
+    branches: [main]
+    paths: [cv.html, assets/qr.svg, assets/fonts/**]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: google-chrome --headless --no-sandbox --no-pdf-header-footer --virtual-time-budget=5000 --print-to-pdf=assets/Evan-Munasinghe-CV.pdf "file://$PWD/cv.html"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/Evan-Munasinghe-CV.pdf
+          git diff --cached --quiet || (git commit -m "Rebuild CV PDF" && git push)

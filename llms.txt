@@ -31,7 +31,7 @@
 
 ## Projects
 
-Case studies: https://evanmunasinghe.dev/projects/invotron.html, https://evanmunasinghe.dev/projects/fleev.html, https://evanmunasinghe.dev/projects/nimuzon.html
+Case studies: https://evanmunasinghe.dev/projects/invotron.html, https://evanmunasinghe.dev/projects/fleev.html, https://evanmunasinghe.dev/projects/nimuzon.html, https://evanmunasinghe.dev/projects/pentakill.html, https://evanmunasinghe.dev/projects/aureus.html
 
 
 - [Invotron](https://www.invotron.store): multi-tenant point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting.
