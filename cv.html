@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evan Munasinghe | CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1d21; --muted: #5f6670; --line: #e4e6ea; --accent: #c8650c; --side: #f5f6f8; }
+    html, body { width: 210mm; height: 297mm; overflow: hidden; }
+    body { font: 9.2pt/1.5 "Plus Jakarta Sans", Helvetica, Arial, sans-serif; color: var(--ink); display: flex; flex-direction: column;
+           -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    header { padding: 13mm 15mm 7mm; border-bottom: 3px solid var(--accent); }
+    h1 { font-size: 26pt; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
+    .role { margin-top: 3pt; font-size: 11.5pt; font-weight: 500; color: var(--muted); }
+
+    .page { display: grid; grid-template-columns: 66mm 1fr; flex: 1; }
+    aside { background: var(--side); padding: 8mm 7mm 10mm 13mm; }
+    main { padding: 8mm 14mm 10mm 8mm; }
+
+    h2 { font-size: 8.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+         color: var(--accent); margin: 0 0 6pt; }
+    section + section { margin-top: 11pt; }
+
+    /* sidebar */
+    .contact li { margin-bottom: 3pt; font-size: 8.4pt; white-space: nowrap; line-height: 1.35; }
+    .contact small { display: block; font-size: 7.4pt; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+    .skill { margin-bottom: 5pt; }
+    .skill h3 { font-size: 8.8pt; font-weight: 700; margin-bottom: 1pt; }
+    .skill p { color: var(--muted); font-size: 8.4pt; line-height: 1.4; }
+    .edu h3 { font-size: 9pt; font-weight: 700; line-height: 1.35; }
+    .edu p { color: var(--muted); font-size: 8.6pt; }
+    .edu .next { margin-top: 6pt; }
+
+    /* main */
+    .summary { color: #33383e; }
+    .job { position: relative; padding-left: 11pt; margin-bottom: 9pt; }
+    .job::before { content: ""; position: absolute; left: 0; top: 5pt; width: 5pt; height: 5pt; border-radius: 50%; background: var(--accent); }
+    .job::after { content: ""; position: absolute; left: 2pt; top: 13pt; bottom: -9pt; width: 1px; background: var(--line); }
+    .job:last-child::after { display: none; }
+    .head { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
+    .job h3, .proj h3 { font-size: 10pt; font-weight: 700; }
+    .org { font-weight: 500; color: var(--muted); }
+    .when { flex: none; font-size: 8.2pt; font-weight: 600; color: var(--accent); }
+    .job p, .proj p { color: #33383e; margin-top: 1pt; }
+    .proj { margin-bottom: 7pt; }
+    .proj .url { font-size: 8.2pt; font-weight: 500; color: var(--muted); }
+    .tags { margin-top: 2pt; font-size: 7.8pt; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evan Munasinghe</h1>
+    <p class="role">Full-Stack Developer · Founder, Aureus Technologies</p>
+  </header>
+
+  <div class="page">
+    <aside>
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><small>Email</small><a href="mailto:esmunasinghe@gmail.com">esmunasinghe@gmail.com</a></li>
+          <li><small>Phone</small><a href="https://wa.me/94714682032">+94 71 468 2032</a></li>
+          <li><small>Location</small>Sri Lanka</li>
+          <li><small>Portfolio</small><a href="https://evanmunasinghe.github.io">evanmunasinghe.github.io</a></li>
+          <li><small>GitHub</small><a href="https://github.com/evanmunasinghe">github.com/evanmunasinghe</a></li>
+          <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/">in/evan-munasinghe-3a8b3a279</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skill"><h3>Languages</h3><p>TypeScript, JavaScript, PHP, Java, SQL</p></div>
+        <div class="skill"><h3>Frontend</h3><p>Next.js, React, Tailwind CSS, shadcn/ui, Motion, Recharts, Hotwire Turbo</p></div>
+        <div class="skill"><h3>Backend</h3><p>Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs</p></div>
+        <div class="skill"><h3>Data &amp; ORM</h3><p>PostgreSQL, Supabase, TiDB, MySQL, MariaDB, MongoDB, Redis, Prisma</p></div>
+        <div class="skill"><h3>Cloud &amp; DevOps</h3><p>Vercel, Vercel Blob, Vite, Git, GitHub Actions</p></div>
+        <div class="skill"><h3>Quality &amp; Tooling</h3><p>Zod, React Hook Form, Playwright, Pest, Puppeteer, ESLint</p></div>
+      </section>
+
+      <section class="edu">
+        <h2>Education</h2>
+        <h3>BSc (Hons) Information Technology</h3>
+        <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p>Fourth year</p>
+        <h3 class="next">Central College Anuradhapura</h3>
+        <p>G.C.E. O/L 2019: 7A, 2B</p>
+        <p>G.C.E. A/L 2022 (sat 2023): Maths stream, 1C, 2S</p>
+        <p>Senior Deputy Head Prefect</p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Profile</h2>
+        <p class="summary">Full-stack developer and founder of Aureus Technologies. I build business software such as point of sale, accounting, garage management, and marketplaces, mostly with Laravel and the MERN stack, from database design to the screens users click on. Currently a full-stack developer intern at Virtual System Solutions and a fourth-year IT undergraduate at SLIIT.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="head"><h3>Founder <span class="org">· Aureus Technologies</span></h3><span class="when">2026 – Present</span></div>
+          <p>Software studio building websites, business systems, and mobile apps for clients. Products include Invotron and Nimuzon.com.</p>
+        </div>
+        <div class="job">
+          <div class="head"><h3>Full-Stack Developer Intern <span class="org">· Virtual System Solutions</span></h3><span class="when">2026 – Present</span></div>
+          <p>Building and maintaining Laravel applications, including the FleeV garage management system.</p>
+        </div>
+        <div class="job">
+          <div class="head"><h3>Software Engineering Apprentice <span class="org">· Eyeplex Solution</span></h3><span class="when">Present</span></div>
+          <p>ASP.NET Core web apps: REST APIs, MVC, authentication, and database work.</p>
+        </div>
+        <div class="job">
+          <div class="head"><h3>Land Surveyor Assistant</h3><span class="when">Part-time</span></div>
+          <p>Field support for licensed surveyors: boundary marking, readings, and setting-out work.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selected Projects</h2>
+        <div class="proj">
+          <div class="head"><h3>Invotron</h3><a class="url" href="https://www.invotron.store">invotron.store</a></div>
+          <p>Point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting in one multi-tenant system.</p>
+          <p class="tags">Multi-tenant · POS · Accounting</p>
+        </div>
+        <div class="proj">
+          <div class="head"><h3>FleeV</h3><a class="url" href="https://fleev.net">fleev.net</a></div>
+          <p>Cloud garage management that replaces paper work orders, missed bookings, and scattered records.</p>
+          <p class="tags">Laravel · MySQL</p>
+        </div>
+        <div class="proj">
+          <div class="head"><h3>Nimuzon.com</h3><a class="url" href="https://nimuzon.com">nimuzon.com</a></div>
+          <p>An online marketplace for natural Sri Lankan gemstones such as Ceylon sapphires and rubies.</p>
+          <p class="tags">Full-stack · E-commerce</p>
+        </div>
+        <div class="proj">
+          <div class="head"><h3>Pentakill</h3><a class="url" href="https://pentakill-blush.vercel.app">pentakill-blush.vercel.app</a></div>
+          <p>Look up any League of Legends player, count every pentakill in their match history, and compare two players.</p>
+          <p class="tags">Riot Games API · UI design</p>
+        </div>
+        <div class="proj">
+          <div class="head"><h3>BakedTato</h3><span class="url">University group project</span></div>
+          <p>MERN delivery and payment platform. Built delivery and payment management, reports, PDF generation, and WhatsApp updates.</p>
+          <p class="tags">React · Node.js · MongoDB</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

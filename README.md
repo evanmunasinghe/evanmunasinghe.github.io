@@ -54,6 +54,13 @@ curl -o assets/tech/name.svg https://cdn.simpleicons.org/<slug>
 # dark logos: https://cdn.simpleicons.org/<slug>/white
 ```
 
+**Update the CV:** edit `cv.html`, then regenerate the PDF the Download CV button serves.
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --no-pdf-header-footer \
+  --print-to-pdf=assets/Evan-Munasinghe-CV.pdf cv.html
+```
+
 **Change colours:** edit the variables in `:root` at the top of `styles.css` (`--purple` and `--cyan` are the two accent colours).
 
 ## Deploy
