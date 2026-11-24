@@ -88,7 +88,9 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .hi { font-size: 1.6rem; font-weight: 700; color: var(--soft); }
 h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 800; line-height: 1.1; letter-spacing: -.02em; padding-bottom: .2rem; }
-.typed { margin-top: 1rem; font-size: 1.35rem; font-weight: 700; }
+.typed { margin-top: 1rem; font-size: 1.35rem; font-weight: 700; display: grid; }
+.typed > * { grid-area: 1 / 1; }
+.typed .ghost { visibility: hidden; padding-right: 5px; } /* reserves the height of the longest role so the page never jumps */
 #typed { color: var(--cyan); }
 .caret { display: inline-block; width: 2px; height: 1.2em; margin-left: 3px; vertical-align: -3px; background: var(--cyan); animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
