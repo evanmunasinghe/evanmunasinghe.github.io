@@ -25,10 +25,8 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://evanmunasinghe.dev/#website", "url": "https://evanmunasinghe.dev/", "name": "Evan Munasinghe", "inLanguage": "en"}, {"@type": "ProfilePage", "@id": "https://evanmunasinghe.dev/#page", "url": "https://evanmunasinghe.dev/", "isPartOf": {"@id": "https://evanmunasinghe.dev/#website"}, "mainEntity": {"@id": "https://evanmunasinghe.dev/#person"}}, {"@type": "Person", "@id": "https://evanmunasinghe.dev/#person", "name": "Evan Munasinghe", "url": "https://evanmunasinghe.dev/", "image": "https://evanmunasinghe.dev/assets/evan-munasinghe.jpeg", "telephone": "+94714682032", "description": "Evan Munasinghe is a Sri Lankan full-stack developer and founder of Aureus Technologies, building POS, accounting and business software with Laravel, React and Next.js.", "jobTitle": "Full-Stack Developer", "address": {"@type": "PostalAddress", "addressCountry": "LK"}, "worksFor": [{"@type": "Organization", "name": "Aureus Technologies", "url": "https://www.aureustech.online"}, {"@type": "Organization", "name": "Virtual System Solutions"}, {"@type": "Organization", "name": "Eyeplex Solution"}], "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Sri Lanka Institute of Information Technology", "alternateName": "SLIIT"}, {"@type": "EducationalOrganization", "name": "Central College Anuradhapura"}], "knowsAbout": ["Full-stack development", "Laravel", "PHP", "React", "Next.js", "Node.js", "TypeScript", "MERN stack", "PostgreSQL", "MySQL", "Point of sale systems", "Accounting software"], "sameAs": ["https://github.com/evanmunasinghe", "https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/"]}]}</script>
   <link rel="icon" type="image/png" href="assets/evan-logo.png">
   <link rel="apple-touch-icon" href="assets/evan-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+  <link rel="preload" href="assets/evan-munasinghe.webp" as="image">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -37,7 +35,7 @@
 
   <header class="nav">
     <a class="logo" href="#home"><span class="grad">Evan</span>&nbsp;Munasinghe<i></i></a>
-    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#bars"/></svg></button>
     <nav id="nav-links" aria-label="Sections">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -51,6 +49,7 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-text">
+        <p class="status">Open to freelance and full-time roles</p>
         <p class="hi">Hi, I am</p>
         <h1 class="grad">Evan Munasinghe</h1>
         <p class="typed">I am a <span id="typed" aria-live="polite">Full-Stack Developer</span><span class="caret" aria-hidden="true"></span></p>
@@ -58,18 +57,19 @@
         <div class="hero-btns">
           <a class="btn" href="#contact">Hire me</a>
           <a class="btn btn-ghost" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="assets/Evan-Munasinghe-CV.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+          <a class="btn btn-ghost" href="assets/Evan-Munasinghe-CV.pdf" download><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#download"/></svg> Download CV</a>
+          <a class="text-link" href="assets/Evan-Munasinghe-CV.pdf" target="_blank" rel="noopener">View CV online</a>
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/evan-munasinghe.jpeg" alt="Evan Munasinghe" width="1600" height="1600">
+        <img src="assets/evan-munasinghe.webp" alt="Evan Munasinghe" width="800" height="800" fetchpriority="high">
         <div class="socials">
-          <a href="mailto:esmunasinghe@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:esmunasinghe@gmail.com" aria-label="Email"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#envelope"/></svg></a>
+          <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#github"/></svg></a>
+          <a href="https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#linkedin-in"/></svg></a>
+          <a href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg></a>
+          <a href="https://www.facebook.com/share/1J9ZfUtniU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#facebook-f"/></svg></a>
+          <a href="https://www.instagram.com/_evanz.____?igsh=cHNicWY4cTRuZnRx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#instagram"/></svg></a>
         </div>
       </div>
     </section>
@@ -78,19 +78,19 @@
       <h2>Why work <span class="grad">with me</span></h2>
       <div class="cards three">
         <article class="card">
-          <i class="fa-solid fa-layer-group icon"></i>
+          <svg class="fa icon" aria-hidden="true"><use href="assets/icons.svg#layer-group"/></svg>
           <h3>Full-stack developer</h3>
           <p>From database design to the screen your users click on. I've shipped multi-tenant systems, payments, and reporting.</p>
           <ul class="chips"><li>Laravel</li><li>React</li><li>Node.js</li></ul>
         </article>
         <article class="card">
-          <i class="fa-solid fa-briefcase icon"></i>
+          <svg class="fa icon" aria-hidden="true"><use href="assets/icons.svg#briefcase"/></svg>
           <h3>Business owner</h3>
           <p>I run Aureus Technologies, so I understand deadlines, budgets, and what a client actually needs from software.</p>
           <ul class="chips"><li>Client work</li><li>Planning</li><li>Delivery</li></ul>
         </article>
         <article class="card">
-          <i class="fa-solid fa-compass-drafting icon"></i>
+          <svg class="fa icon" aria-hidden="true"><use href="assets/icons.svg#compass-drafting"/></svg>
           <h3>Detail-focused</h3>
           <p>I also work part-time as a land surveyor assistant, where every measurement has to be right the first time.</p>
           <ul class="chips"><li>Testing</li><li>Accuracy</li><li>Reliability</li></ul>
@@ -103,28 +103,28 @@
       <p class="sub">The languages, frameworks, and tools I use to build things.</p>
       <div class="cards skills">
         <article class="card">
-          <h3><i class="fa-solid fa-code"></i> Languages</h3>
-          <ul class="chips tech"><li><img src="assets/tech/typescript.svg" alt="" width="18" height="18">TypeScript</li><li><img src="assets/tech/javascript.svg" alt="" width="18" height="18">JavaScript</li><li><img src="assets/tech/php.svg" alt="" width="18" height="18">PHP</li><li><img src="assets/tech/java.svg" alt="" width="18" height="18">Java</li><li><i class="fa-solid fa-database"></i>SQL</li></ul>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#code"/></svg> Languages</h3>
+          <ul class="chips tech"><li><img src="assets/tech/typescript.svg" alt="" width="18" height="18">TypeScript</li><li><img src="assets/tech/javascript.svg" alt="" width="18" height="18">JavaScript</li><li><img src="assets/tech/php.svg" alt="" width="18" height="18">PHP</li><li><img src="assets/tech/java.svg" alt="" width="18" height="18">Java</li><li><img src="assets/tech/c.svg" alt="" width="18" height="18">C</li><li><img src="assets/tech/cplusplus.svg" alt="" width="18" height="18">C++</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#database"/></svg>SQL</li></ul>
         </article>
         <article class="card">
-          <h3><i class="fa-solid fa-display"></i> Frontend</h3>
-          <ul class="chips tech"><li><img src="assets/tech/nextdotjs.svg" alt="" width="18" height="18">Next.js</li><li><img src="assets/tech/react.svg" alt="" width="18" height="18">React</li><li><img src="assets/tech/tailwindcss.svg" alt="" width="18" height="18">Tailwind CSS</li><li><img src="assets/tech/shadcnui.svg" alt="" width="18" height="18">shadcn/ui</li><li><img src="assets/tech/framer.svg" alt="" width="18" height="18">Motion</li><li><i class="fa-solid fa-chart-line"></i>Recharts</li><li><img src="assets/tech/hotwire.svg" alt="" width="18" height="18">Hotwire Turbo</li></ul>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#display"/></svg> Frontend</h3>
+          <ul class="chips tech"><li><img src="assets/tech/nextdotjs.svg" alt="" width="18" height="18">Next.js</li><li><img src="assets/tech/react.svg" alt="" width="18" height="18">React</li><li><img src="assets/tech/tailwindcss.svg" alt="" width="18" height="18">Tailwind CSS</li><li><img src="assets/tech/shadcnui.svg" alt="" width="18" height="18">shadcn/ui</li><li><img src="assets/tech/framer.svg" alt="" width="18" height="18">Motion</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#chart-line"/></svg>Recharts</li><li><img src="assets/tech/hotwire.svg" alt="" width="18" height="18">Hotwire Turbo</li></ul>
         </article>
         <article class="card">
-          <h3><i class="fa-solid fa-server"></i> Backend</h3>
-          <ul class="chips tech"><li><img src="assets/tech/laravel.svg" alt="" width="18" height="18">Laravel</li><li><img src="assets/tech/springboot.svg" alt="" width="18" height="18">Spring Boot</li><li><img src="assets/tech/nodedotjs.svg" alt="" width="18" height="18">Node.js</li><li><img src="assets/tech/express.svg" alt="" width="18" height="18">Express</li><li><i class="fa-solid fa-key"></i>NextAuth</li><li><i class="fa-solid fa-plug"></i>REST APIs</li></ul>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#server"/></svg> Backend</h3>
+          <ul class="chips tech"><li><img src="assets/tech/laravel.svg" alt="" width="18" height="18">Laravel</li><li><img src="assets/tech/springboot.svg" alt="" width="18" height="18">Spring Boot</li><li><img src="assets/tech/nodedotjs.svg" alt="" width="18" height="18">Node.js</li><li><img src="assets/tech/express.svg" alt="" width="18" height="18">Express</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#key"/></svg>NextAuth</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#plug"/></svg>REST APIs</li></ul>
         </article>
         <article class="card">
-          <h3><i class="fa-solid fa-database"></i> Data &amp; ORM</h3>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#database"/></svg> Data &amp; ORM</h3>
           <ul class="chips tech"><li><img src="assets/tech/postgresql.svg" alt="" width="18" height="18">PostgreSQL</li><li><img src="assets/tech/supabase.svg" alt="" width="18" height="18">Supabase</li><li><img src="assets/tech/tidb.svg" alt="" width="18" height="18">TiDB</li><li><img src="assets/tech/mysql.svg" alt="" width="18" height="18">MySQL</li><li><img src="assets/tech/mariadb.svg" alt="" width="18" height="18">MariaDB</li><li><img src="assets/tech/mongodb.svg" alt="" width="18" height="18">MongoDB</li><li><img src="assets/tech/redis.svg" alt="" width="18" height="18">Redis</li><li><img src="assets/tech/prisma.svg" alt="" width="18" height="18">Prisma</li></ul>
         </article>
         <article class="card">
-          <h3><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h3>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg> Cloud &amp; DevOps</h3>
           <ul class="chips tech"><li><img src="assets/tech/vercel.svg" alt="" width="18" height="18">Vercel</li><li><img src="assets/tech/vercel.svg" alt="" width="18" height="18">Vercel Blob</li><li><img src="assets/tech/vite.svg" alt="" width="18" height="18">Vite</li><li><img src="assets/tech/git.svg" alt="" width="18" height="18">Git</li><li><img src="assets/tech/githubactions.svg" alt="" width="18" height="18">GitHub Actions</li></ul>
         </article>
         <article class="card">
-          <h3><i class="fa-solid fa-circle-check"></i> Quality &amp; Tooling</h3>
-          <ul class="chips tech"><li><img src="assets/tech/zod.svg" alt="" width="18" height="18">Zod</li><li><img src="assets/tech/reacthookform.svg" alt="" width="18" height="18">React Hook Form</li><li><img src="assets/tech/playwright.svg" alt="" width="18" height="18">Playwright</li><li><i class="fa-solid fa-vial"></i>Pest</li><li><img src="assets/tech/puppeteer.svg" alt="" width="18" height="18">Puppeteer</li><li><img src="assets/tech/eslint.svg" alt="" width="18" height="18">ESLint</li></ul>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg> Quality &amp; Tooling</h3>
+          <ul class="chips tech"><li><img src="assets/tech/zod.svg" alt="" width="18" height="18">Zod</li><li><img src="assets/tech/reacthookform.svg" alt="" width="18" height="18">React Hook Form</li><li><img src="assets/tech/playwright.svg" alt="" width="18" height="18">Playwright</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#vial"/></svg>Pest</li><li><img src="assets/tech/puppeteer.svg" alt="" width="18" height="18">Puppeteer</li><li><img src="assets/tech/eslint.svg" alt="" width="18" height="18">ESLint</li></ul>
         </article>
       </div>
     </section>
@@ -149,7 +149,7 @@
           </div>
         </li>
         <li class="card">
-          <span class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+          <span class="logo-icon"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#compass-drafting"/></svg></span>
           <div>
             <p class="when">Part-time</p>
             <h3>Land Surveyor Assistant</h3>
@@ -186,69 +186,69 @@
     <section class="section" id="projects">
       <h2>Projects <span class="grad">showcase</span></h2>
       <div class="filters" role="group" aria-label="Filter projects">
-        <button type="button" class="active" data-filter="all"><i class="fa-solid fa-border-all"></i> All</button>
-        <button type="button" data-filter="business"><i class="fa-solid fa-briefcase"></i> Business systems</button>
-        <button type="button" data-filter="web"><i class="fa-solid fa-globe"></i> Web &amp; mobile</button>
-        <button type="button" data-filter="uni"><i class="fa-solid fa-graduation-cap"></i> University</button>
+        <button type="button" class="active" data-filter="all"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#border-all"/></svg> All</button>
+        <button type="button" data-filter="business"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#briefcase"/></svg> Business systems</button>
+        <button type="button" data-filter="web"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg> Web &amp; mobile</button>
+        <button type="button" data-filter="uni"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg> University</button>
       </div>
       <p class="sub" id="count" aria-live="polite"></p>
 
       <div class="cards projects">
         <article class="card project" data-cat="business">
-          <a class="thumb" href="https://www.invotron.store" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/invotron.jpg" alt="Screenshot of Invotron" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://www.invotron.store" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/invotron.webp" alt="Screenshot of Invotron" width="800" height="486" loading="lazy"></a>
           <p class="tag">Business system · 2026</p>
           <h3>Invotron</h3>
           <p>Point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting in one multi-tenant system.</p>
           <ul class="chips"><li>Multi-tenant</li><li>POS</li><li>Accounting</li></ul>
-          <p class="links"><a href="https://www.invotron.store" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="projects/invotron.html">Case study</a><a href="https://www.invotron.store" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="business">
-          <a class="thumb" href="https://fleev.net" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/fleev.jpg" alt="Screenshot of FleeV" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://fleev.net" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/fleev.webp" alt="Screenshot of FleeV" width="800" height="486" loading="lazy"></a>
           <p class="tag">Business system · 2026</p>
           <h3>FleeV</h3>
           <p>Cloud garage management that replaces paper work orders, missed bookings, and scattered records.</p>
           <ul class="chips"><li>Laravel</li><li>MySQL</li></ul>
-          <p class="links"><a href="https://fleev.net" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="projects/fleev.html">Case study</a><a href="https://fleev.net" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="web">
-          <a class="thumb" href="https://nimuzon.com" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/nimuzon.jpg" alt="Screenshot of Nimuzon.com" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://nimuzon.com" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/nimuzon.webp" alt="Screenshot of Nimuzon.com" width="800" height="486" loading="lazy"></a>
           <p class="tag">Marketplace · 2026</p>
           <h3>Nimuzon.com</h3>
           <p>An online marketplace for natural Sri Lankan gemstones such as Ceylon sapphires and rubies.</p>
           <ul class="chips"><li>Full-stack</li><li>E-commerce</li></ul>
-          <p class="links"><a href="https://nimuzon.com" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="projects/nimuzon.html">Case study</a><a href="https://nimuzon.com" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="web">
-          <a class="thumb" href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/pentakill.jpg" alt="Screenshot of Pentakill" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/pentakill.webp" alt="Screenshot of Pentakill" width="800" height="486" loading="lazy"></a>
           <p class="tag">Web app · 2026</p>
           <h3>Pentakill</h3>
           <p>Look up any League of Legends player, count every pentakill in their match history, and compare two players.</p>
           <ul class="chips"><li>Riot Games API</li><li>UI design</li></ul>
-          <p class="links"><a href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="https://pentakill-blush.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="web">
-          <a class="thumb" href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/remindme.jpg" alt="Screenshot of Remind me" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/remindme.webp" alt="Screenshot of Remind me" width="800" height="486" loading="lazy"></a>
           <p class="tag">Mobile app · 2026</p>
           <h3>Remind me</h3>
           <p>A mobile app a client uses to keep track of payments owed to suppliers.</p>
           <ul class="chips"><li>Mobile</li></ul>
-          <p class="links"><a href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="https://remindme-xi-nine.vercel.app" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="web">
-          <a class="thumb" href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/aureus.jpg" alt="Screenshot of Aureus Technologies" width="800" height="486" loading="lazy"></a>
+          <a class="thumb" href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/aureus.webp" alt="Screenshot of Aureus Technologies" width="800" height="486" loading="lazy"></a>
           <p class="tag">Website · 2026</p>
           <h3>Aureus Technologies</h3>
-          <p>The website for my software studio, presenting services and client work.</p>
-          <ul class="chips"><li>Full-stack</li></ul>
-          <p class="links"><a href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p>The website and project management suite for my software studio: it presents services and client work, and runs client projects.</p>
+          <ul class="chips"><li>Full-stack</li><li>Project management</li></ul>
+          <p class="links"><a href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="web">
-          <div class="thumb"><img src="assets/thumbs/shop.jpg" alt="Screenshot of Client demo sites" width="800" height="486" loading="lazy"></div>
+          <div class="thumb"><img src="assets/thumbs/shop.webp" alt="Screenshot of Client demo sites" width="800" height="486" loading="lazy"></div>
           <p class="tag">Demo sites · 2025–26</p>
           <h3>Client demo sites</h3>
           <p>Sample sites for pitching clients: a florist, a cliffside resort in Uluwatu, and a licensed land surveying firm.</p>
           <ul class="chips"><li>Next.js</li></ul>
-          <p class="links"><a href="https://demo-shop-lyart.vercel.app" target="_blank" rel="noopener noreferrer">Florist <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://demo-resort-liart.vercel.app" target="_blank" rel="noopener noreferrer">Resort <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p class="links"><a href="https://demo-shop-lyart.vercel.app" target="_blank" rel="noopener noreferrer">Florist <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a><a href="https://demo-resort-liart.vercel.app" target="_blank" rel="noopener noreferrer">Resort <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
         <article class="card project" data-cat="uni">
           <p class="tag">Group project</p>
@@ -290,13 +290,22 @@
         <label>Name<input name="name" required autocomplete="name"></label>
         <label>Subject<input name="subject" required></label>
         <label class="full">Message<textarea name="message" rows="5" required></textarea></label>
-        <button class="btn full" type="submit"><i class="fa-brands fa-whatsapp"></i> Send via WhatsApp</button>
+        <button class="btn full" type="submit"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg> Send via WhatsApp</button>
       </form>
+      <div class="card save-contact">
+        <img src="assets/qr.svg" alt="QR code linking to evanmunasinghe.dev" width="120" height="120">
+        <div>
+          <h3>Save my contact</h3>
+          <p>Add me to your phone in one tap, or scan the code to open this site.</p>
+          <p class="hero-btns"><a class="btn btn-ghost" href="assets/evan-munasinghe.vcf" download><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#download"/></svg> Save contact</a></p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© <span id="year">2026</span> Evan Munasinghe. Built by me.</p>
   </footer>
+  <a class="wa-float" href="https://wa.me/94714682032" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg></a>
 </body>
 </html>

@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Munasinghe;Evan;;;
+FN:Evan Munasinghe
+TITLE:Full-Stack Developer
+ORG:Aureus Technologies
+TEL;TYPE=CELL:+94714682032
+URL:https://evanmunasinghe.dev
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/
+X-SOCIALPROFILE;TYPE=github:https://github.com/evanmunasinghe
+ADR;TYPE=WORK:;;;;;;Sri Lanka
+END:VCARD

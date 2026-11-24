@@ -22,7 +22,7 @@
 
 ## Skills
 
-- Languages: TypeScript, JavaScript, PHP, Java, SQL
+- Languages: TypeScript, JavaScript, PHP, Java, C, C++, SQL
 - Frontend: Next.js, React, Tailwind CSS, shadcn/ui, Motion, Recharts, Hotwire Turbo
 - Backend: Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs
 - Data: PostgreSQL, Supabase, TiDB, MySQL, MariaDB, MongoDB, Redis, Prisma
@@ -31,12 +31,15 @@
 
 ## Projects
 
+Case studies: https://evanmunasinghe.dev/projects/invotron.html, https://evanmunasinghe.dev/projects/fleev.html, https://evanmunasinghe.dev/projects/nimuzon.html
+
+
 - [Invotron](https://www.invotron.store): multi-tenant point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting.
 - [FleeV](https://fleev.net): cloud garage management system (Laravel, MySQL).
 - [Nimuzon.com](https://nimuzon.com): online marketplace for natural Sri Lankan gemstones.
 - [Pentakill](https://pentakill-blush.vercel.app): League of Legends pentakill counter using the Riot Games API.
 - [Remind me](https://remindme-xi-nine.vercel.app): mobile app for tracking payments owed to suppliers.
-- [Aureus Technologies](https://www.aureustech.online): studio website.
+- [Aureus Technologies](https://www.aureustech.online): studio website and project management suite for running client projects.
 
 ## Hiring and contact
 

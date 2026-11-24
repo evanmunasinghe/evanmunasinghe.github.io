@@ -30,7 +30,7 @@ index.html          page content
 styles.css          all styling (colours are CSS variables at the top)
 script.js           typing effect, mobile menu, active nav link, project filter, contact form
 assets/
-  bg.jpg            background image (compressed copy of Background.jpeg)
+  bg.webp           background image (compressed copy of Background.jpeg)
   evan-munasinghe.jpeg, *-logo.*   photo and company logos
   thumbs/           compressed project screenshots used on the cards
   tech/             technology logos (SVG)
@@ -44,7 +44,7 @@ assets/
 **Add a project screenshot:** make a small copy so the page stays fast, then point the card's `<img>` at it.
 
 ```bash
-sips -s format jpeg -s formatOptions 72 -Z 800 "assets/Projects/your-shot.png" --out assets/thumbs/name.jpg
+cwebp -q 78 -resize 800 0 "assets/Projects/your-shot.png" -o assets/thumbs/name.webp
 ```
 
 **Add a technology logo:** download it from Simple Icons and add a chip in the Tech expertise section.
@@ -61,6 +61,10 @@ curl -o assets/tech/name.svg https://cdn.simpleicons.org/<slug>
   --print-to-pdf=assets/Evan-Munasinghe-CV.pdf cv.html
 ```
 
+**Add an icon:** download its SVG from Font Awesome Free, copy the `<path>` into a new `<symbol id="name" viewBox="...">` in `assets/icons.svg`, then use it with `<svg class="fa" aria-hidden="true"><use href="assets/icons.svg#name"/></svg>`.
+
+**Add a case study:** copy `projects/invotron.html`, change the text, and add a `cwebp`-compressed screenshot to `assets/case/`. Link it from the project card and add the URL to `sitemap.xml` and `llms.txt`.
+
 **Change colours:** edit the variables in `:root` at the top of `styles.css` (`--purple` and `--cyan` are the two accent colours).
 
 ## Deploy
@@ -70,7 +74,7 @@ The site is served by GitHub Pages from the `main` branch, on the custom domain 
 ## Credits
 
 - Tech logos: [Simple Icons](https://simpleicons.org) (CC0) and [Devicon](https://devicon.dev) (MIT)
-- Icons: [Font Awesome](https://fontawesome.com) Free
-- Font: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) via Google Fonts
+- Icons: [Font Awesome](https://fontawesome.com) Free (CC BY 4.0), bundled as an SVG sprite in `assets/icons.svg`
+- Font: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) (SIL OFL), self-hosted in `assets/fonts/`
 
 © 2026 Evan Munasinghe

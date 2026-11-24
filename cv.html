@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
   <title>Evan Munasinghe | CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <style>
+    @font-face { font-family: "Plus Jakarta Sans"; font-weight: 400 800; src: url("assets/fonts/plus-jakarta-sans.woff2") format("woff2"); }
     @page { size: A4; margin: 0; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --ink: #1a1d21; --muted: #5f6670; --line: #e4e6ea; --accent: #c8650c; --side: #f5f6f8; }
@@ -14,7 +15,9 @@
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
 
-    header { padding: 13mm 15mm 7mm; border-bottom: 3px solid var(--accent); }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 11mm 15mm 6mm; border-bottom: 3px solid var(--accent); }
+    .qr { text-align: center; font-size: 7pt; color: var(--muted); }
+    .qr img { display: block; width: 19mm; height: 19mm; margin-bottom: 1pt; }
     h1 { font-size: 26pt; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
     .role { margin-top: 3pt; font-size: 11.5pt; font-weight: 500; color: var(--muted); }
 
@@ -54,8 +57,11 @@
 </head>
 <body>
   <header>
+    <div>
     <h1>Evan Munasinghe</h1>
     <p class="role">Full-Stack Developer · Founder, Aureus Technologies</p>
+    </div>
+    <a class="qr" href="https://evanmunasinghe.dev"><img src="assets/qr.svg" alt="">Portfolio</a>
   </header>
 
   <div class="page">
@@ -74,7 +80,7 @@
 
       <section>
         <h2>Skills</h2>
-        <div class="skill"><h3>Languages</h3><p>TypeScript, JavaScript, PHP, Java, SQL</p></div>
+        <div class="skill"><h3>Languages</h3><p>TypeScript, JavaScript, PHP, Java, C, C++, SQL</p></div>
         <div class="skill"><h3>Frontend</h3><p>Next.js, React, Tailwind CSS, shadcn/ui, Motion, Recharts, Hotwire Turbo</p></div>
         <div class="skill"><h3>Backend</h3><p>Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs</p></div>
         <div class="skill"><h3>Data &amp; ORM</h3><p>PostgreSQL, Supabase, TiDB, MySQL, MariaDB, MongoDB, Redis, Prisma</p></div>
@@ -143,9 +149,9 @@
           <p class="tags">Riot Games API · UI design</p>
         </div>
         <div class="proj">
-          <div class="head"><h3>BakedTato</h3><span class="url">University group project</span></div>
-          <p>MERN delivery and payment platform. Built delivery and payment management, reports, PDF generation, and WhatsApp updates.</p>
-          <p class="tags">React · Node.js · MongoDB</p>
+          <div class="head"><h3>Aureus Technologies</h3><a class="url" href="https://www.aureustech.online">aureustech.online</a></div>
+          <p>My studio's website and project management suite: presents services and client work, and runs client projects.</p>
+          <p class="tags">Full-stack · Project management</p>
         </div>
       </section>
     </main>
