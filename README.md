@@ -2,7 +2,7 @@
 
 Personal portfolio of **Evan Munasinghe**, full-stack developer and founder of Aureus Technologies, Sri Lanka.
 
-Live at **https://evanmunasinghe.github.io**
+Live at **https://evanmunasinghe.dev**
 
 ## What's inside
 
@@ -65,7 +65,7 @@ curl -o assets/tech/name.svg https://cdn.simpleicons.org/<slug>
 
 ## Deploy
 
-The site is served by GitHub Pages from the `main` branch. Push to `main` and it updates within a minute or two.
+The site is served by GitHub Pages from the `main` branch, on the custom domain evanmunasinghe.dev (DNS managed in Vercel, `CNAME` file in the repo). Push to `main` and it updates within a minute or two.
 
 ## Credits
 

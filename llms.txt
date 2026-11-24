@@ -1,0 +1,43 @@
+# Evan Munasinghe
+
+> Evan Munasinghe is a full-stack developer from Sri Lanka and the founder of Aureus Technologies, a software studio. He builds business software such as point of sale, accounting, garage management, and marketplaces, mostly with Laravel and the MERN stack.
+
+- Website: https://evanmunasinghe.dev
+- CV (PDF): https://evanmunasinghe.dev/assets/Evan-Munasinghe-CV.pdf
+- GitHub: https://github.com/evanmunasinghe
+- LinkedIn: https://www.linkedin.com/in/evan-munasinghe-3a8b3a279/
+- Phone / WhatsApp: +94 71 468 2032
+
+## Current roles
+
+- Founder, Aureus Technologies (2026 – present): websites, business systems, and mobile apps for clients. Products include Invotron and Nimuzon.com.
+- Full-Stack Developer Intern, Virtual System Solutions (2026 – present): Laravel applications, including the FleeV garage management system.
+- Software Engineering Apprentice, Eyeplex Solution (present): ASP.NET Core web apps, REST APIs, MVC, authentication, and database work.
+- Land Surveyor Assistant (part-time).
+
+## Education
+
+- BSc (Hons) Information Technology, Sri Lanka Institute of Information Technology (SLIIT), fourth year.
+- Central College Anuradhapura: G.C.E. O/L 2019 (7A, 2B), G.C.E. A/L 2022 Maths stream. Senior Deputy Head Prefect.
+
+## Skills
+
+- Languages: TypeScript, JavaScript, PHP, Java, SQL
+- Frontend: Next.js, React, Tailwind CSS, shadcn/ui, Motion, Recharts, Hotwire Turbo
+- Backend: Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs
+- Data: PostgreSQL, Supabase, TiDB, MySQL, MariaDB, MongoDB, Redis, Prisma
+- Cloud and DevOps: Vercel, Vite, Git, GitHub Actions
+- Quality: Zod, React Hook Form, Playwright, Pest, Puppeteer, ESLint
+
+## Projects
+
+- [Invotron](https://www.invotron.store): multi-tenant point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting.
+- [FleeV](https://fleev.net): cloud garage management system (Laravel, MySQL).
+- [Nimuzon.com](https://nimuzon.com): online marketplace for natural Sri Lankan gemstones.
+- [Pentakill](https://pentakill-blush.vercel.app): League of Legends pentakill counter using the Riot Games API.
+- [Remind me](https://remindme-xi-nine.vercel.app): mobile app for tracking payments owed to suppliers.
+- [Aureus Technologies](https://www.aureustech.online): studio website.
+
+## Hiring and contact
+
+Evan is open to freelance projects, client work, and developer roles. The fastest way to reach him is WhatsApp (+94 71 468 2032) or the contact form on https://evanmunasinghe.dev.
