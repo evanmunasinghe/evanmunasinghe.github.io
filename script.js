@@ -31,27 +31,60 @@ const spy = new IntersectionObserver((entries) => {
 }, { rootMargin: "-45% 0px -50% 0px" });
 document.querySelectorAll("main section[id]").forEach((s) => spy.observe(s));
 
-// Project filter.
+// Project filter: by category button, or by clicking a skill chip.
 const buttons = document.querySelectorAll(".filters button");
 const projects = document.querySelectorAll(".project");
 const count = document.getElementById("count");
-function filter(cat) {
+function filter(test, label = "") {
   let shown = 0;
-  projects.forEach((p) => { p.hidden = cat !== "all" && p.dataset.cat !== cat; if (!p.hidden) shown++; });
-  count.textContent = `Showing ${shown} project${shown === 1 ? "" : "s"}`;
+  projects.forEach((p) => { p.hidden = !test(p); if (!p.hidden) shown++; });
+  count.textContent = `Showing ${shown} project${shown === 1 ? "" : "s"}${label ? ` using ${label} · ` : ""}`;
+  if (label) {
+    const all = document.createElement("button");
+    all.type = "button"; all.className = "copy-btn"; all.textContent = "Show all";
+    all.onclick = () => buttons[0].click();
+    count.append(all);
+  }
 }
+const byCat = (cat) => (p) => cat === "all" || p.dataset.cat === cat;
 buttons.forEach((b) => b.addEventListener("click", () => {
   buttons.forEach((x) => x.classList.toggle("active", x === b));
-  filter(b.dataset.filter);
+  filter(byCat(b.dataset.filter));
 }));
-filter("all");
+filter(byCat("all"));
 
-// Contact form opens WhatsApp with the message filled in (static site, no server).
+// Skill chips that match a project become buttons that filter to those projects.
+const keyOf = (s) => ({ "rest apis": "rest-apis", "oauth 2.0": "oauth" })[s] || s.replace(/ /g, "-");
+document.querySelectorAll(".chips.tech li").forEach((li) => {
+  const name = li.textContent.trim(), key = keyOf(name.toLowerCase());
+  const match = (p) => (p.dataset.tech || "").split(" ").includes(key);
+  if (![...projects].some(match)) return;
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip-link"; b.title = `Show projects using ${name}`;
+  b.append(...li.childNodes); li.append(b);
+  b.onclick = () => {
+    buttons.forEach((x) => x.classList.remove("active"));
+    filter(match, name);
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+  };
+});
+
+// Contact form opens WhatsApp with a short brief filled in (static site, no server).
 document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
   const f = new FormData(e.target);
-  const text = `Hi Evan, I'm ${f.get("name")}.\n\n${f.get("subject")}\n\n${f.get("message")}`;
+  const lines = [`Hi Evan, I'm ${f.get("name")}.`, `Project: ${f.get("type")}`];
+  if (f.get("budget").trim()) lines.push(`Budget: ${f.get("budget").trim()}`);
+  if (f.get("timeline")) lines.push(`Timeline: ${f.get("timeline")}`);
+  const text = `${lines.join("\n")}\n\n${f.get("message")}`;
   window.open(`https://wa.me/94714682032?text=${encodeURIComponent(text)}`, "_blank", "noopener");
 });
+
+// Copy buttons (e.g. the email address).
+document.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
+  await navigator.clipboard.writeText(b.dataset.copy);
+  b.textContent = "Copied";
+  setTimeout(() => (b.textContent = "Copy"), 2000);
+}));
 
 document.getElementById("year").textContent = new Date().getFullYear();

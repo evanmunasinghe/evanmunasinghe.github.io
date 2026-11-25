@@ -30,7 +30,7 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
-button, input, textarea { font: inherit; color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
 img { display: block; max-width: 100%; height: auto; }
 .fa { width: 1em; height: 1em; fill: currentColor; display: inline-block; vertical-align: -.125em; flex: none; }
 :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
@@ -216,7 +216,7 @@ h3 { font-size: 1.15rem; font-weight: 700; line-height: 1.35; }
 .contact-form:hover { transform: none; }
 .contact-form label { display: grid; gap: .4rem; font-weight: 600; font-size: .9rem; }
 .contact-form .full { grid-column: 1 / -1; }
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form select, .contact-form textarea {
   width: 100%;
   padding: .8rem 1rem;
   border-radius: 12px;
@@ -225,7 +225,7 @@ h3 { font-size: 1.15rem; font-weight: 700; line-height: 1.35; }
   font-weight: 400;
   resize: vertical;
 }
-.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--purple); }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: none; border-color: var(--purple); }
 
 footer { text-align: center; padding: 2.5rem 1rem; color: var(--soft); border-top: 1px solid var(--line); font-size: .9rem; }
 
@@ -282,6 +282,10 @@ footer { text-align: center; padding: 2.5rem 1rem; color: var(--soft); border-to
 .chips.tech img { width: 18px; height: 18px; }
 .chips.tech .fa { width: 18px; text-align: center; color: var(--cyan); font-size: .9rem; }
 .chips.tech li:hover { border-color: rgba(234, 122, 18, .5); }
+/* skill chips that link to projects: the button fills the chip */
+.chips.tech li:has(.chip-link) { padding: 0; }
+.chip-link { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .85rem; background: none; border: 0; cursor: pointer; }
+.chip-link:hover, .chip-link:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 
 /* fixed background image with dark tint for readability */
 body::before {
@@ -294,7 +298,7 @@ body::before {
     url("assets/bg.webp") center / cover no-repeat;
 }
 .card { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-.contact-form input, .contact-form textarea { background: rgba(13, 17, 23, .75); }
+.contact-form input, .contact-form select, .contact-form textarea { background: rgba(13, 17, 23, .75); }
 .nav { background: rgba(13, 17, 23, .7); }
 
 /* case study pages */
@@ -322,3 +326,16 @@ body::before {
 .save-contact img { flex: none; border-radius: 10px; background: #fff; padding: 8px; }
 .save-contact .hero-btns { margin-top: 1rem; }
 @media (max-width: 600px) { .save-contact { flex-direction: column; text-align: center; } .save-contact .hero-btns { justify-content: center; } }
+
+/* small text buttons: Copy email, Show all, Share fallback */
+.copy-btn { padding: .1rem .6rem; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 255, 255, .05); color: var(--cyan); font-size: .85rem; font-weight: 600; cursor: pointer; }
+.copy-btn:hover { border-color: rgba(234, 122, 18, .5); }
+.contact-form small { font-weight: 400; color: var(--soft); }
+
+/* previous / next case study */
+.case-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.case-nav a { color: var(--soft); font-weight: 600; }
+.case-nav a:hover { color: var(--text); }
+.case-nav .next { margin-left: auto; text-align: right; }
+@media (max-width: 600px) { .case-nav { flex-direction: column; } .case-nav .next { margin-left: 0; text-align: left; } }
+.contact-form select { color-scheme: dark; }

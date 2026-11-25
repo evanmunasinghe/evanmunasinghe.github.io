@@ -11,7 +11,9 @@ Live at **https://evanmunasinghe.dev**
 - **Tech expertise**: skills grouped by area, each with its logo
 - **Experience & education** timeline
 - **Projects showcase** with screenshots, live links, and filters (Business systems, Web & mobile, University)
-- **Contact form** that opens WhatsApp with the message already filled in
+- **Contact form** that opens WhatsApp with a ready-to-quote brief (project type, budget, timeline)
+- **Skill chips** that filter the projects to the ones using that skill
+- **Case-study pages** with Share and previous/next links (`case.js`)
 
 It's a plain static site: HTML, CSS, and a small amount of vanilla JavaScript. No build step, no framework, no dependencies to install.
 
@@ -28,7 +30,8 @@ Then open http://localhost:8000.
 ```
 index.html          page content
 styles.css          all styling (colours are CSS variables at the top)
-script.js           typing effect, mobile menu, active nav link, project filter, contact form
+script.js           typing effect, mobile menu, active nav link, project + skill filter, contact form, copy email
+case.js             Share button on case studies
 assets/
   bg.webp           background image
   evan-munasinghe.jpeg, *-logo.*   photo and company logos

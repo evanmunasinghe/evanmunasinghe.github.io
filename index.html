@@ -101,7 +101,7 @@
 
     <section class="section" id="skills">
       <h2>Tech <span class="grad">Expertise</span></h2>
-      <p class="sub">The languages, frameworks, and tools I use to build things.</p>
+      <p class="sub">The languages, frameworks, and tools I use to build things. Click a skill to see the projects that use it.</p>
       <div class="cards skills">
         <article class="card">
           <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#code"/></svg> Languages</h3>
@@ -203,7 +203,7 @@
           <ul class="chips"><li>Multi-tenant</li><li>POS</li><li>Accounting</li></ul>
           <p class="links"><a href="projects/invotron.html">Case study</a><a href="https://www.invotron.store" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
-        <article class="card project" data-cat="business">
+        <article class="card project" data-tech="laravel mysql" data-cat="business">
           <a class="thumb" href="https://fleev.net" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="assets/thumbs/fleev.webp" alt="Screenshot of FleeV" width="800" height="486" loading="lazy"></a>
           <p class="tag">Business system · 2026</p>
           <h3>FleeV</h3>
@@ -211,7 +211,7 @@
           <ul class="chips"><li>Laravel</li><li>MySQL</li></ul>
           <p class="links"><a href="projects/fleev.html">Case study</a><a href="https://fleev.net" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
-        <article class="card project" data-cat="business">
+        <article class="card project" data-tech="rest-apis oauth openapi" data-cat="business">
           <a class="thumb" href="projects/ant-erp-api.html" tabindex="-1"><img src="assets/thumbs/ant-erp-api.webp" alt="Screenshot of the Ant ERP API client management page" width="800" height="486" loading="lazy"></a>
           <p class="tag">API · 2026 · Virtual System Solutions</p>
           <h3>Ant ERP API v1</h3>
@@ -251,7 +251,7 @@
           <ul class="chips"><li>Full-stack</li><li>Project management</li></ul>
           <p class="links"><a href="projects/aureus.html">Case study</a><a href="https://www.aureustech.online" target="_blank" rel="noopener noreferrer">Visit site <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
-        <article class="card project" data-cat="web">
+        <article class="card project" data-tech="next.js" data-cat="web">
           <div class="thumb"><img src="assets/thumbs/shop.webp" alt="Screenshot of Client demo sites" width="800" height="486" loading="lazy"></div>
           <p class="tag">Demo sites · 2025–26</p>
           <h3>Client demo sites</h3>
@@ -259,25 +259,25 @@
           <ul class="chips"><li>Next.js</li></ul>
           <p class="links"><a href="https://demo-shop-lyart.vercel.app" target="_blank" rel="noopener noreferrer">Florist <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a><a href="https://demo-resort-liart.vercel.app" target="_blank" rel="noopener noreferrer">Resort <svg class="fa" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right-from-square"/></svg></a></p>
         </article>
-        <article class="card project" data-cat="uni">
+        <article class="card project" data-tech="react node.js express mongodb" data-cat="uni">
           <p class="tag">Group project</p>
           <h3>BakedTato</h3>
           <p>MERN delivery and payment platform. I built delivery and payment management, reports, PDF generation, and WhatsApp updates.</p>
           <ul class="chips"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
         </article>
-        <article class="card project" data-cat="uni">
+        <article class="card project" data-tech="laravel mysql" data-cat="uni">
           <p class="tag">University</p>
           <h3>Car Sale</h3>
           <p>Vehicle and customer management with authentication, dynamic forms, and full CRUD.</p>
           <ul class="chips"><li>Laravel</li><li>MySQL</li></ul>
         </article>
-        <article class="card project" data-cat="uni">
+        <article class="card project" data-tech="react node.js express mongodb" data-cat="uni">
           <p class="tag">University</p>
           <h3>Event Hub</h3>
           <p>Event discovery, ticket booking, and merchandise sales.</p>
           <ul class="chips"><li>MERN</li></ul>
         </article>
-        <article class="card project" data-cat="uni">
+        <article class="card project" data-tech="java mysql" data-cat="uni">
           <p class="tag">University</p>
           <h3>Online Order System</h3>
           <p>Order workflows on a Java web app backed by MySQL, running on Tomcat.</p>
@@ -294,10 +294,26 @@
 
     <section class="section" id="contact">
       <h2>Get in <span class="grad">Touch</span></h2>
-      <p class="sub">Have a project, idea, or role in mind? Send a message and it will open in WhatsApp, or email me at <a href="mailto:esmunasinghe@gmail.com">esmunasinghe@gmail.com</a>.</p>
+      <p class="sub">Have a project, idea, or role in mind? Send a message and it will open in WhatsApp, or email me at <a href="mailto:esmunasinghe@gmail.com">esmunasinghe@gmail.com</a> <button type="button" class="copy-btn" data-copy="esmunasinghe@gmail.com">Copy</button></p>
       <form class="card contact-form" id="contact-form">
         <label>Name<input name="name" required autocomplete="name"></label>
-        <label>Subject<input name="subject" required></label>
+        <label>Project type<select name="type" required>
+          <option value="" disabled selected>Choose one</option>
+          <option>Website</option>
+          <option>Business system (POS, accounting, booking…)</option>
+          <option>Mobile app</option>
+          <option>API or integration</option>
+          <option>Job or internship opportunity</option>
+          <option>Something else</option>
+        </select></label>
+        <label><span>Budget <small>(optional)</small></span><input name="budget" placeholder="e.g. LKR 150,000 or not sure"></label>
+        <label><span>Timeline <small>(optional)</small></span><select name="timeline">
+          <option value="">Not sure</option>
+          <option>As soon as possible</option>
+          <option>Within a month</option>
+          <option>1–3 months</option>
+          <option>Flexible</option>
+        </select></label>
         <label class="full">Message<textarea name="message" rows="5" required></textarea></label>
         <button class="btn full" type="submit"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg> Send via WhatsApp</button>
       </form>
