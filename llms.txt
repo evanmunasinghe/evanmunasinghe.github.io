@@ -12,7 +12,7 @@
 
 - Founder, Aureus Technologies (2026 – present): websites, business systems, and mobile apps for clients. Products include Invotron and Nimuzon.com.
 - Full-Stack Developer Intern, Virtual System Solutions (2026 – present): Laravel applications, API v1 for the Ant ERP system (versioned REST API, OpenAPI documentation, OAuth 2.0 client credentials with scopes, which he set up, read and write endpoints).
-- Software Engineering Apprentice, Eyeplex Solution (present): ASP.NET Core web apps, REST APIs, MVC, authentication, and database work.
+- Software Engineering Apprentice, Eyeplex Solution (present): ASP.NET Core web apps, REST APIs, MVC, authentication, and database work. Helped build the Sanasa Finance Suite (Nov 2025 – Jul 2026, .NET and SQL Server), mainly the front end and printable passbook layouts, and set it up on a local machine at Sanasa.
 - Land Surveyor Assistant (part-time).
 
 ## Education
@@ -31,11 +31,12 @@
 
 ## Projects
 
-Case studies: https://evanmunasinghe.dev/projects/invotron.html, https://evanmunasinghe.dev/projects/fleev.html, https://evanmunasinghe.dev/projects/nimuzon.html, https://evanmunasinghe.dev/projects/pentakill.html, https://evanmunasinghe.dev/projects/aureus.html, https://evanmunasinghe.dev/projects/ant-erp-api.html
+Case studies: https://evanmunasinghe.dev/projects/invotron.html, https://evanmunasinghe.dev/projects/fleev.html, https://evanmunasinghe.dev/projects/nimuzon.html, https://evanmunasinghe.dev/projects/pentakill.html, https://evanmunasinghe.dev/projects/aureus.html, https://evanmunasinghe.dev/projects/ant-erp-api.html, https://evanmunasinghe.dev/projects/sanasa-finance.html
 
 
 - [Invotron](https://www.invotron.store): multi-tenant point of sale, inventory, quotations, warranties and repairs, payroll, VAT, and double-entry accounting.
 - [FleeV](https://fleev.net): garage management add-on for the Ant ERP, built on the Ant ERP API v1 he created (Laravel, MySQL).
+- [Sanasa Finance Suite](https://evanmunasinghe.dev/projects/sanasa-finance.html): financial management system for a Sanasa cooperative (members, loans, collections, AGO deductions, cheques, general ledger, printable passbooks), built at Eyeplex Solution with .NET and SQL Server.
 - [Nimuzon.com](https://nimuzon.com): online marketplace for natural Sri Lankan gemstones.
 - [Pentakill](https://pentakill-blush.vercel.app): League of Legends pentakill counter using the Riot Games API.
 - [Remind me](https://remindme-xi-nine.vercel.app): mobile app for tracking payments owed to suppliers.
