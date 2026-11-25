@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ant ERP API v1 case study: a versioned REST API with OpenAPI documentation, UUID and API secret authentication, and read and write endpoints, built by Evan Munasinghe at Virtual System Solutions.">
+  <meta name="theme-color" content="#0D1117">
+  <title>Ant ERP API v1 case study | Evan Munasinghe</title>
+  <link rel="canonical" href="https://evanmunasinghe.dev/projects/ant-erp-api.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Evan Munasinghe">
+  <meta property="og:url" content="https://evanmunasinghe.dev/projects/ant-erp-api.html">
+  <meta property="og:title" content="Ant ERP API v1 case study | Evan Munasinghe">
+  <meta property="og:description" content="Ant ERP API v1 case study: a versioned REST API with OpenAPI documentation, UUID and API secret authentication, and read and write endpoints, built by Evan Munasinghe at Virtual System Solutions.">
+  <meta property="og:image" content="https://evanmunasinghe.dev/assets/case/ant-erp-api.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2">
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/"><span class="grad">Evan</span>&nbsp;Munasinghe<i></i></a>
+    <a class="back" href="/#projects">&larr; All projects</a>
+  </header>
+
+  <main class="case">
+    <p class="tag">API · 2026 · Virtual System Solutions</p>
+    <h1 class="grad">Ant ERP API v1</h1>
+    <p class="lead">A versioned REST API that lets other systems read from and write to the Ant ERP, documented with OpenAPI.</p>
+    <ul class="chips"><li>REST API</li><li>OpenAPI</li><li>OAuth 2.0</li><li>Integrations</li></ul>
+
+    <a href="/assets/case/ant-erp-api.webp" target="_blank"><img class="shot" src="/assets/case/ant-erp-api.webp" alt="The Ant ERP integration page for managing OAuth API clients, with private details blurred" width="1400" height="851"></a>
+
+    <h2>The problem</h2>
+    <p>Other systems had no safe, documented way to exchange data with the ERP. Every integration would have meant custom work and guesswork about the data.</p>
+
+    <h2>What it does</h2>
+    <ul class="features">
+      <li>Versioned as v1, so later changes don't break systems already connected to it.</li>
+      <li>OAuth client credentials: each integration gets its own client UUID and secret, and swaps them for short-lived access tokens.</li>
+      <li>Scoped access: every client is limited to the read and write permissions it needs, such as reading customers or writing invoices.</li>
+      <li>Secrets expire (180 days by default) and can be rotated, and clients can be revoked or deleted from one admin page.</li>
+      <li>Quick connect: an add-on can register itself with a one-time code, with no manual setup.</li>
+      <li>A full OpenAPI specification that integrators can read, and generate client code from.</li>
+      <li>Already in use: <a href="/projects/fleev.html">FleeV</a>, the garage management add-on I built, connects to the ERP through this API.</li>
+    </ul>
+
+    <h2>My role</h2>
+    <p>At Virtual System Solutions I designed and built API v1, set up its OAuth authentication (client credentials, scopes, secret expiry and rotation), and wrote the OpenAPI documentation. I also built the integration page above, where admins create, scope and manage API clients. The documentation is private to the company, so private details in the screenshot are blurred.</p>
+
+    <div class="card cta">
+      <h3>Need an API for your system?</h3>
+      <p>I design and build documented APIs that let your software talk to other systems safely. Tell me what you need.</p>
+      <p class="hero-btns"><a class="btn" href="/#contact">Get in touch</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Evan Munasinghe · <a href="/">evanmunasinghe.dev</a></p>
+  </footer>
+</body>
+</html>
