@@ -26,7 +26,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="assets/evan-munasinghe.webp" as="image">
+  <link rel="preload" as="image" href="assets/evan-munasinghe.webp" imagesrcset="assets/evan-munasinghe-480.webp 480w, assets/evan-munasinghe.webp 800w" imagesizes="(max-width: 457px) 70vw, 320px">
   <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/evan-munasinghe.webp" alt="Evan Munasinghe" width="800" height="800" fetchpriority="high">
+        <img src="assets/evan-munasinghe.webp" srcset="assets/evan-munasinghe-480.webp 480w, assets/evan-munasinghe.webp 800w" sizes="(max-width: 457px) 70vw, 320px" alt="Evan Munasinghe" width="800" height="800" fetchpriority="high">
         <div class="socials">
           <a href="mailto:esmunasinghe@gmail.com" aria-label="Email"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#envelope"/></svg></a>
           <a href="https://github.com/evanmunasinghe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#github"/></svg></a>
@@ -112,8 +112,8 @@
           <ul class="chips tech"><li><img src="assets/tech/nextdotjs.svg" alt="" width="18" height="18">Next.js</li><li><img src="assets/tech/react.svg" alt="" width="18" height="18">React</li><li><img src="assets/tech/tailwindcss.svg" alt="" width="18" height="18">Tailwind CSS</li><li><img src="assets/tech/shadcnui.svg" alt="" width="18" height="18">shadcn/ui</li><li><img src="assets/tech/framer.svg" alt="" width="18" height="18">Motion</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#chart-line"/></svg>Recharts</li><li><img src="assets/tech/hotwire.svg" alt="" width="18" height="18">Hotwire Turbo</li></ul>
         </article>
         <article class="card">
-          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#server"/></svg> Backend</h3>
-          <ul class="chips tech"><li><img src="assets/tech/laravel.svg" alt="" width="18" height="18">Laravel</li><li><img src="assets/tech/springboot.svg" alt="" width="18" height="18">Spring Boot</li><li><img src="assets/tech/nodedotjs.svg" alt="" width="18" height="18">Node.js</li><li><img src="assets/tech/express.svg" alt="" width="18" height="18">Express</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#key"/></svg>NextAuth</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#plug"/></svg>REST APIs</li></ul>
+          <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#server"/></svg> Backend &amp; APIs</h3>
+          <ul class="chips tech"><li><img src="assets/tech/laravel.svg" alt="" width="18" height="18">Laravel</li><li><img src="assets/tech/springboot.svg" alt="" width="18" height="18">Spring Boot</li><li><img src="assets/tech/nodedotjs.svg" alt="" width="18" height="18">Node.js</li><li><img src="assets/tech/express.svg" alt="" width="18" height="18">Express</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#key"/></svg>NextAuth</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#plug"/></svg>REST APIs</li><li><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#key"/></svg>OAuth 2.0</li><li><img src="assets/tech/openapiinitiative.svg" alt="" width="18" height="18">OpenAPI</li></ul>
         </article>
         <article class="card">
           <h3><svg class="fa" aria-hidden="true"><use href="assets/icons.svg#database"/></svg> Data &amp; ORM</h3>
@@ -134,7 +134,7 @@
       <h2>Experience &amp; <span class="grad">Education</span></h2>
       <ol class="timeline">
         <li class="card">
-          <img src="assets/evan-logo.png" alt="" width="48" height="48">
+          <img src="assets/evan-logo.webp" alt="" width="48" height="48">
           <div>
             <p class="when">2026 – Present</p>
             <h3>Founder, Aureus Technologies</h3>
@@ -142,7 +142,7 @@
           </div>
         </li>
         <li class="card">
-          <img src="assets/virtual-system-solutions-logo.jpeg" alt="" width="48" height="48">
+          <img src="assets/virtual-system-solutions-logo.webp" alt="" width="48" height="48">
           <div>
             <p class="when">2026 – Present</p>
             <h3>Full-Stack Developer Intern, Virtual System Solutions</h3>
@@ -158,7 +158,7 @@
           </div>
         </li>
         <li class="card">
-          <img class="on-dark" src="assets/eyeplex-logo.jpeg" alt="" width="48" height="48">
+          <img class="on-dark" src="assets/eyeplex-logo.webp" alt="" width="48" height="48">
           <div>
             <p class="when">Present</p>
             <h3>Software Engineering Apprentice, Eyeplex Solution</h3>
@@ -166,7 +166,7 @@
           </div>
         </li>
         <li class="card">
-          <img src="assets/sliit-logo.jpg" alt="" width="48" height="48">
+          <img src="assets/sliit-logo.webp" alt="" width="48" height="48">
           <div>
             <p class="when">Fourth year</p>
             <h3>BSc (Hons) Information Technology, SLIIT</h3>
@@ -174,7 +174,7 @@
           </div>
         </li>
         <li class="card">
-          <img src="assets/central-college-logo.jpeg" alt="" width="48" height="48">
+          <img src="assets/central-college-logo.webp" alt="" width="48" height="48">
           <div>
             <p class="when">O/L 2019 · A/L 2022 (sat 2023)</p>
             <h3>Central College Anuradhapura</h3>

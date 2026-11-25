@@ -24,7 +24,7 @@
 
 - Languages: TypeScript, JavaScript, PHP, Java, C, C++, SQL
 - Frontend: Next.js, React, Tailwind CSS, shadcn/ui, Motion, Recharts, Hotwire Turbo
-- Backend: Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs
+- Backend & APIs: Laravel, Spring Boot, Node.js, Express, NextAuth, REST APIs, OAuth 2.0, OpenAPI
 - Data: PostgreSQL, Supabase, TiDB, MySQL, MariaDB, MongoDB, Redis, Prisma
 - Cloud and DevOps: Vercel, Vite, Git, GitHub Actions
 - Quality: Zod, React Hook Form, Playwright, Pest, Puppeteer, ESLint
