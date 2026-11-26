@@ -32,6 +32,9 @@ index.html          page content
 styles.css          all styling (colours are CSS variables at the top)
 script.js           typing effect, mobile menu, active nav link, project + skill filter, contact form, copy email
 case.js             Share button on case studies
+cv.html             CV page (source for the PDF)
+projects/           case-study pages
+llms.txt            site summary for LLM crawlers
 assets/
   bg.webp           background image
   evan-munasinghe.jpeg, *-logo.*   photo and company logos
