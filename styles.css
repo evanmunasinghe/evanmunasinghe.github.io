@@ -339,3 +339,4 @@ body::before {
 .case-nav .next { margin-left: auto; text-align: right; }
 @media (max-width: 600px) { .case-nav { flex-direction: column; } .case-nav .next { margin-left: 0; text-align: left; } }
 .contact-form select { color-scheme: dark; }
+.music-btn { padding: .5rem 1.2rem; font-size: .9rem; }

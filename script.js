@@ -88,3 +88,13 @@ document.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("clic
 }));
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Background music toggle.
+const bgm = document.getElementById("bgm"), musicBtn = document.querySelector(".music-btn");
+bgm.volume = .4;
+musicBtn.addEventListener("click", () => {
+  const on = bgm.paused;
+  on ? bgm.play() : bgm.pause();
+  musicBtn.setAttribute("aria-pressed", on);
+  musicBtn.textContent = on ? "❚❚ Pause music" : "♪ Play music";
+});

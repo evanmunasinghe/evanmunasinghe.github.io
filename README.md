@@ -37,6 +37,7 @@ projects/           case-study pages
 llms.txt            site summary for LLM crawlers
 assets/
   bg.webp           background image
+  music.mp3         hero background music loop (made with ffmpeg)
   evan-munasinghe.jpeg, *-logo.*   photo and company logos
   thumbs/           compressed project screenshots used on the cards
   case/             full-width screenshots for the case-study pages
